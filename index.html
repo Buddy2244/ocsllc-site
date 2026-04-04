@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Origin Code Systems LLC</title>
+  <meta
+    name="description"
+    content="Origin Code Systems LLC develops reliable, modern software solutions, including Chiefs Desk for fire department operations and inventory management."
+  />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ember: "#c55a11",
+            slateblue: "#1d3557",
+            mist: "#f4f7fb",
+            pine: "#203731"
+          },
+          fontFamily: {
+            display: ["Manrope", "ui-sans-serif", "system-ui", "sans-serif"],
+            body: ["Plus Jakarta Sans", "ui-sans-serif", "system-ui", "sans-serif"]
+          },
+          boxShadow: {
+            soft: "0 24px 70px -28px rgba(17, 24, 39, 0.35)"
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background:
+        radial-gradient(circle at top left, rgba(197, 90, 17, 0.14), transparent 24%),
+        radial-gradient(circle at 85% 15%, rgba(29, 53, 87, 0.18), transparent 26%),
+        linear-gradient(180deg, #fcfcfb 0%, #f3f6fa 100%);
+    }
+
+    .grid-pattern {
+      background-image:
+        linear-gradient(rgba(148, 163, 184, 0.12) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(148, 163, 184, 0.12) 1px, transparent 1px);
+      background-size: 36px 36px;
+    }
+  </style>
+</head>
+<body class="font-body text-slate-900 antialiased">
+  <div class="relative isolate overflow-hidden">
+    <div class="absolute inset-x-0 top-0 -z-10 h-[34rem] bg-gradient-to-b from-white/70 to-transparent"></div>
+
+    <header class="mx-auto max-w-7xl px-6 pt-6 lg:px-8">
+      <nav class="rounded-full border border-white/70 bg-white/85 px-5 py-4 shadow-soft backdrop-blur">
+        <div class="flex items-center justify-between gap-4">
+          <a href="#top" class="font-display text-lg font-extrabold tracking-tight text-slateblue sm:text-xl">
+            Origin Code Systems
+          </a>
+
+          <button
+            id="menu-toggle"
+            type="button"
+            class="inline-flex items-center justify-center rounded-full border border-slate-200 p-2 text-slate-700 transition hover:border-slateblue hover:text-slateblue lg:hidden"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            aria-label="Toggle navigation"
+          >
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"></path>
+            </svg>
+          </button>
+
+          <div class="hidden items-center gap-8 lg:flex">
+            <a href="#product" class="text-sm font-semibold text-slate-700 transition hover:text-slateblue">Our Product</a>
+            <a
+              href="#product"
+              class="rounded-full bg-slateblue px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-900"
+            >
+              Explore Chiefs Desk
+            </a>
+          </div>
+        </div>
+
+        <div id="mobile-menu" class="mt-4 hidden border-t border-slate-200 pt-4 lg:hidden">
+          <div class="flex flex-col gap-3">
+            <a href="#product" class="text-sm font-semibold text-slate-700 transition hover:text-slateblue">Our Product</a>
+            <a
+              href="#product"
+              class="inline-flex w-fit rounded-full bg-slateblue px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-900"
+            >
+              Explore Chiefs Desk
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="mx-auto max-w-7xl px-6 pb-16 pt-14 lg:px-8 lg:pb-24 lg:pt-20">
+        <div class="grid items-center gap-14 lg:grid-cols-[1.1fr_0.9fr]">
+          <div>
+            <div class="inline-flex items-center gap-2 rounded-full border border-ember/20 bg-white/80 px-4 py-2 text-sm font-semibold text-ember shadow-sm">
+              <span class="h-2 w-2 rounded-full bg-ember"></span>
+              Reliable software for operationally critical teams
+            </div>
+            <h1 class="mt-7 max-w-3xl font-display text-4xl font-extrabold tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
+              Modern software development built for organizations that cannot afford failure.
+            </h1>
+            <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
+              Origin Code Systems LLC develops reliable, modern software solutions with a focus on practical systems that support daily operations, accountability, and long-term continuity.
+            </p>
+            <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+              <a
+                href="#product"
+                class="inline-flex items-center justify-center rounded-full bg-slateblue px-6 py-3 text-base font-semibold text-white transition hover:bg-slate-900"
+              >
+                Discover Our Solutions
+              </a>
+              <a
+                href="#about"
+                class="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white/90 px-6 py-3 text-base font-semibold text-slate-700 transition hover:border-slateblue hover:text-slateblue"
+              >
+                Learn More About Us
+              </a>
+            </div>
+
+            <dl class="mt-10 grid gap-5 sm:grid-cols-3">
+              <div class="rounded-3xl border border-white/70 bg-white/80 p-5 shadow-sm backdrop-blur">
+                <dt class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">Focus</dt>
+                <dd class="mt-2 text-base font-semibold text-slate-900">Mission-critical software delivery</dd>
+              </div>
+              <div class="rounded-3xl border border-white/70 bg-white/80 p-5 shadow-sm backdrop-blur">
+                <dt class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">Product</dt>
+                <dd class="mt-2 text-base font-semibold text-slate-900">Chiefs Desk for Fire Departments</dd>
+              </div>
+              <div class="rounded-3xl border border-white/70 bg-white/80 p-5 shadow-sm backdrop-blur">
+                <dt class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">Location</dt>
+                <dd class="mt-2 text-base font-semibold text-slate-900">Saybrook, Illinois</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="relative">
+            <div class="absolute -left-10 top-10 -z-10 h-40 w-40 rounded-full bg-ember/15 blur-3xl"></div>
+            <div class="absolute -right-8 bottom-0 -z-10 h-48 w-48 rounded-full bg-slateblue/15 blur-3xl"></div>
+
+            <div class="overflow-hidden rounded-[2rem] border border-white/80 bg-white shadow-soft">
+              <div class="grid-pattern border-b border-slate-200/80 p-8">
+                <div class="flex items-start justify-between gap-4">
+                  <div>
+                    <p class="text-sm font-semibold uppercase tracking-[0.22em] text-slate-500">Flagship Platform</p>
+                    <h2 class="mt-3 font-display text-3xl font-extrabold text-slate-950">Chiefs Desk</h2>
+                    <p class="mt-3 max-w-md text-sm leading-7 text-slate-600">
+                      A comprehensive SaaS platform built specifically for Fire Departments managing stations, personnel hierarchy, and cradle-to-grave quartermaster inventory tracking for PPE and apparatus.
+                    </p>
+                  </div>
+                  <div class="rounded-2xl bg-pine px-4 py-3 text-right text-white shadow-lg">
+                    <div class="text-xs uppercase tracking-[0.22em] text-white/70">Purpose</div>
+                    <div class="mt-1 text-lg font-bold">Operational clarity</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="space-y-5 p-8">
+                <div class="rounded-3xl bg-mist p-5">
+                  <div class="flex items-center gap-3">
+                    <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-slateblue text-white">
+                      <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                        <path d="M12 3l8 4.5v9L12 21 4 16.5v-9L12 3z" stroke-linejoin="round"></path>
+                        <path d="M12 12l8-4.5M12 12v9M12 12L4 7.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 class="font-semibold text-slate-900">Built for real department workflows</h3>
+                      <p class="text-sm text-slate-600">Supports multi-station operations, rank structures, and long-lifecycle asset tracking.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="grid gap-4 sm:grid-cols-2">
+                  <div class="rounded-3xl border border-slate-200 p-5">
+                    <p class="text-sm font-semibold uppercase tracking-[0.18em] text-ember">Command</p>
+                    <p class="mt-3 text-sm leading-7 text-slate-600">Centralized oversight for stations, personnel assignments, and departmental hierarchy.</p>
+                  </div>
+                  <div class="rounded-3xl border border-slate-200 p-5">
+                    <p class="text-sm font-semibold uppercase tracking-[0.18em] text-ember">Logistics</p>
+                    <p class="mt-3 text-sm leading-7 text-slate-600">Quartermaster tooling for PPE and apparatus inventory from issue through retirement.</p>
+                  </div>
+                  <div class="rounded-3xl border border-slate-200 p-5 sm:col-span-2">
+                    <p class="text-sm font-semibold uppercase tracking-[0.18em] text-ember">Compliance</p>
+                    <p class="mt-3 text-sm leading-7 text-slate-600">Clear records and lifecycle visibility that help departments stay audit-ready and accountable.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="product" class="mx-auto max-w-7xl px-6 py-10 lg:px-8 lg:py-16">
+        <div class="rounded-[2rem] bg-slate-950 px-8 py-10 text-white shadow-soft lg:px-12 lg:py-14">
+          <div class="max-w-3xl">
+            <p class="text-sm font-semibold uppercase tracking-[0.22em] text-amber-300">Our Product</p>
+            <h2 class="mt-4 font-display text-3xl font-extrabold sm:text-4xl">Chiefs Desk helps Fire Departments run with precision.</h2>
+            <p class="mt-5 text-base leading-8 text-slate-300">
+              Chiefs Desk is designed for department leadership and operational staff who need dependable systems for station oversight, personnel structure, and equipment accountability across the full lifecycle of mission-critical assets.
+            </p>
+          </div>
+
+          <div class="mt-10 grid gap-5 md:grid-cols-3">
+            <article class="rounded-3xl border border-white/10 bg-white/5 p-6">
+              <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-amber-400/15 text-amber-300">
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M5 12h14M12 5v14" stroke-linecap="round"></path>
+                </svg>
+              </div>
+              <h3 class="mt-5 text-xl font-semibold">Command Visibility</h3>
+              <p class="mt-3 text-sm leading-7 text-slate-300">
+                Consolidates department structure and operational information in one dependable administrative system.
+              </p>
+            </article>
+
+            <article class="rounded-3xl border border-white/10 bg-white/5 p-6">
+              <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-amber-400/15 text-amber-300">
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M4 7h16v10H4z" stroke-linejoin="round"></path>
+                  <path d="M8 7V5h8v2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+              <h3 class="mt-5 text-xl font-semibold">Inventory Lifecycle Tracking</h3>
+              <p class="mt-3 text-sm leading-7 text-slate-300">
+                Tracks PPE and apparatus through assignment, maintenance, replacement, and retirement.
+              </p>
+            </article>
+
+            <article class="rounded-3xl border border-white/10 bg-white/5 p-6">
+              <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-amber-400/15 text-amber-300">
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M12 3l7 4v5c0 4.2-2.4 7.9-7 9-4.6-1.1-7-4.8-7-9V7l7-4z" stroke-linejoin="round"></path>
+                  <path d="M9.5 12.5l1.7 1.7 3.3-4.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+              <h3 class="mt-5 text-xl font-semibold">Operational Accountability</h3>
+              <p class="mt-3 text-sm leading-7 text-slate-300">
+                Maintains clean records that support accountability, continuity, and department compliance needs.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="mx-auto max-w-7xl px-6 py-10 lg:px-8 lg:py-16">
+        <div class="grid gap-8 lg:grid-cols-[0.95fr_1.05fr]">
+          <div class="rounded-[2rem] border border-white/70 bg-white/85 p-8 shadow-soft backdrop-blur">
+            <p class="text-sm font-semibold uppercase tracking-[0.22em] text-ember">About Us</p>
+            <h2 class="mt-4 font-display text-3xl font-extrabold text-slate-950">Software that respects the demands of critical infrastructure.</h2>
+            <p class="mt-5 text-base leading-8 text-slate-600">
+              Origin Code Systems LLC is committed to building dependable software for organizations that serve the public and operate in high-accountability environments. Our work emphasizes clarity, reliability, and systems that support emergency responders with practical value.
+            </p>
+          </div>
+
+          <div class="grid gap-5 sm:grid-cols-2">
+            <div class="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm">
+              <h3 class="font-display text-2xl font-bold text-slate-950">Dependable by design</h3>
+              <p class="mt-3 text-sm leading-7 text-slate-600">We focus on software that is easy to trust, easy to maintain, and grounded in real operational requirements.</p>
+            </div>
+            <div class="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm">
+              <h3 class="font-display text-2xl font-bold text-slate-950">Built for service organizations</h3>
+              <p class="mt-3 text-sm leading-7 text-slate-600">Our product direction is centered on the needs of departments whose work directly affects readiness and public safety.</p>
+            </div>
+            <div class="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm sm:col-span-2">
+              <h3 class="font-display text-2xl font-bold text-slate-950">Professional presentation for verification</h3>
+              <p class="mt-3 text-sm leading-7 text-slate-600">This site clearly identifies Origin Code Systems LLC, its flagship product, and the company’s physical presence for public and platform verification purposes.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="mt-8 border-t border-slate-200/80 bg-white/90">
+      <div class="mx-auto grid max-w-7xl gap-8 px-6 py-10 lg:grid-cols-[1fr_auto] lg:px-8">
+        <div>
+          <p class="font-display text-2xl font-extrabold text-slate-950">Origin Code Systems LLC</p>
+          <p class="mt-3 max-w-2xl text-sm leading-7 text-slate-600">
+            Developing reliable, modern software solutions with a focus on operational clarity and critical-service organizations.
+          </p>
+        </div>
+
+        <div class="space-y-3 text-sm text-slate-600">
+          <p>
+            <a href="privacy.html" class="font-semibold text-slateblue transition hover:text-slate-900">Privacy Policy</a>
+          </p>
+          <p>Copyright 2026 Origin Code Systems LLC. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    if (menuToggle && mobileMenu) {
+      menuToggle.addEventListener("click", () => {
+        const isExpanded = menuToggle.getAttribute("aria-expanded") === "true";
+        menuToggle.setAttribute("aria-expanded", String(!isExpanded));
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      mobileMenu.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          menuToggle.setAttribute("aria-expanded", "false");
+          mobileMenu.classList.add("hidden");
+        });
+      });
+    }
+  </script>
+</body>
+</html>
